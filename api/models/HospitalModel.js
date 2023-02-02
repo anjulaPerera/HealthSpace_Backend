@@ -23,6 +23,11 @@ var HospitalSchema = new Schema({
         required:[true,'Address field is required!'],
         maxlength:100
     },
+    reg_id:{
+        type:String,
+        required:[true,'Reg ID field is required!'],
+        maxlength:100
+    },
     email:{
         type:String,
         required:[true,'Email field is required!'],
