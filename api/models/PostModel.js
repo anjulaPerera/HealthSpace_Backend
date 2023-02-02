@@ -2,7 +2,7 @@ var mongoose=require('mongoose');
 var Schema=mongoose.Schema;
 
 var PostSchema=new Schema({
-    name:{
+    title:{
         type:String,
         required:[true,'Name field is required!'],
         maxlength:100
@@ -16,11 +16,11 @@ var PostSchema=new Schema({
         type: String,
         required: false
     },
-    patient_name:{
-        type:mongoose.Schema.Types.ObjectId,
-        ref:'Patient',
-        required:[true,'Patient field is required!']
-    },
+    // patient_name:{
+    //     type:mongoose.Schema.Types.ObjectId,
+    //     ref:'Patient',
+    //     required:[true,'Patient field is required!']
+    // },
     created_date:{
         type:Date,
         default:Date.now
