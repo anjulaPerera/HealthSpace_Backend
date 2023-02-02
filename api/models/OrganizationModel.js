@@ -28,6 +28,16 @@ var OrganizationSchema = new Schema({
         required:[true,'Email field is required!'],
         unique:true
     },
+    org_type:{
+        type:String,
+        required:[true,'Type field is required!'],
+        unique:true
+    },
+    org_service:{
+        type:String,
+        required:[true,'Service field is required!'],
+        unique:true
+    },
     phone_number:{
         type:String,
         required:[true,'Phone number field is required!']

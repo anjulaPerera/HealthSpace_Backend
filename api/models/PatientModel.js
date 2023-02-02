@@ -36,10 +36,6 @@ var PatientSchema = new Schema({
         maxlength:20,
         enum : Gender
     },
-    dob:{
-        type:Date,
-        required:[true,'Gender field is required!']
-    },
     age:{
         type:Number,
         required:[true,'Gender field is required!'],

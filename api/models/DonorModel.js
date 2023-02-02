@@ -31,17 +31,14 @@ var DonorSchema = new Schema({
     },
     gender:{
         type:String,
-        required:[true,'Gender field is required!'],
+        required:[true,'Gender field is required gggggggggg!'],
         maxlength:20,
         enum: Gender,
     },
-    dob:{
-        type:Date,
-        required:[true,'Gender field is required!']
-    },
+
     age:{
         type:String,
-        required:[true,'Gender field is required!'],
+        required:[true,'Age field is required!'],
         maxlength:20
     },
     weight:{
@@ -51,14 +48,19 @@ var DonorSchema = new Schema({
     },
     blood_group:{
         type:String,
-        required:[true,'Gender field is required!'],
+        required:[true,'Blood group field is required!'],
         maxlength:20,
         enum : BloodGroup
         //<-----------***********DROPDOWN**********-------------->
     },
     expected_donation:{
         type:String,
-        required:[true,'Gender field is required!'],
+        required:[true,'Donation field is required!'],
+        maxlength:100
+    },
+    nearest_hospital:{
+        type:String,
+        required:[true,'Nearest hospital field is required!'],
         maxlength:100
     },
     email:{
