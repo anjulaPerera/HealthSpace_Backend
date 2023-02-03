@@ -49,6 +49,10 @@ var HospitalSchema = new Schema({
         required:[true,'Password field is required!'],
         minlength:5
     },
+    web:{
+        type:String,
+        required:[false]
+    },
     // services: {
     //     type: [Enum.String({
     //         values: ['Option1', 'Option2', 'Option3']
