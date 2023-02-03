@@ -16,11 +16,11 @@ var PostSchema=new Schema({
         type: String,
         required: false
     },
-    // patient_name:{
-    //     type:mongoose.Schema.Types.ObjectId,
-    //     ref:'Patient',
-    //     required:[true,'Patient field is required!']
-    // },
+    patient_name:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:'Patient',
+        required:[false]
+    },
     created_date:{
         type:Date,
         default:Date.now
