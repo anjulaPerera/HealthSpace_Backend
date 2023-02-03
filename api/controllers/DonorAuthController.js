@@ -1,11 +1,11 @@
 const { Donor } = require("../models/DonorModel");
 
 exports.registerDonor = (req,res)=>{
-    console.log(err)
+
     const donor = new Donor(req.body);
 
     donor.save((err,doc)=>{
-        console.log(err)
+    
         if(err){
             return res.status(422).json({
                 success:false,
