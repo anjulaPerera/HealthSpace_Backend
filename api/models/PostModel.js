@@ -17,7 +17,7 @@ var PostSchema=new Schema({
         required: false
     },
     patient_name:{
-        type:mongoose.Schema.Types.ObjectId,
+        type:String,
         ref:'Patient',
         required:[false]
     },
