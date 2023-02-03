@@ -16,76 +16,76 @@ var DonorSchema = new Schema({
     },
     name:{
         type:String,
-        required:[true,'Name field is required!'],
+        required:[false,'Name field is required!'],
         maxlength:100
     },
     nic:{
         type:String,
-        required:[true,'NIC field is required!'],
+        required:[false,'NIC field is required!'],
         maxlength:20
     },
     address:{
         type:String,
-        required:[true,'Address field is required!'],
+        required:[false,'Address field is required!'],
         maxlength:100
     },
     gender:{
         type:String,
-        required:[true,'Gender field is required gggggggggg!'],
+        required:[false,'Gender field is required gggggggggg!'],
         maxlength:20,
         enum: Gender,
     },
 
     age:{
         type:String,
-        required:[true,'Age field is required!'],
+        required:[false,'Age field is required!'],
         maxlength:20
     },
     weight:{
         type:String,
-        required:[true,'Weight field is required!'],
+        required:[false,'Weight field is required!'],
         maxlength:20
     },
     blood_group:{
         type:String,
-        required:[true,'Blood group field is required!'],
+        required:[false,'Blood group field is required!'],
         maxlength:20,
         enum : BloodGroup
         //<-----------***********DROPDOWN**********-------------->
     },
     expected_donation:{
         type:String,
-        required:[true,'Donation field is required!'],
+        required:[false,'Donation field is required!'],
         maxlength:100
     },
     nearest_hospital:{
         type:String,
-        required:[true,'Nearest hospital field is required!'],
+        required:[false,'Nearest hospital field is required!'],
         maxlength:100
     },
     email:{
         type:String,
-        required:[true,'Email field is required!'],
-        unique:true
+        required:[false,'Email field is required!'],
+        unique:false
     },
     phone_number:{
         type:String,
-        required:[true,'Phone number field is required!']
+        required:[false,'Phone number field is required!']
     },
     subordinate_contact:{
         type:String,
-        required:[true,'Subordinate contact field is required!']
+        required:[false,'Subordinate contact field is required!']
     },
     role:{
         type:String,
         enum:UseRole.DONOR,
-        required:[true,'User role field is required!'],
+        required:[false,'User role field is required!'],
         default : UseRole.DONOR
         
     },
     password:{
         type:String,
-        required:[true,'Password field is required!'],
+        required:[false,'Password field is required!'],
         minlength:5
     },
     create_date:{
